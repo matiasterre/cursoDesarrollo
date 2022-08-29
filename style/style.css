@@ -1,0 +1,394 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+/*             fin del reset               */
+
+body {
+    background-color: whitesmoke; 
+    font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
+}
+
+@media (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5em;
+    }
+
+    header a img {
+        width: 12em;
+    }
+
+    header .menuIcon img {
+        height: 2em;
+        padding-top: 1em;
+    }
+
+    header .menuDesplegable {
+        display: none;
+        position: absolute;
+        right: 0%;
+        background-color: whitesmoke;
+        border-radius: 0.25em;
+    }
+
+    header .menuIcon .menuDesplegable ul.menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .menuIcon .menuDesplegable ul.menu li {
+        margin: 0.05em 0.05em;
+        background-color: black;
+        border-radius: 0.5em;
+        width: 5em;
+        font-size: 1em;
+        width: auto;
+        padding: 0.5em;
+        opacity: 100%;
+    }
+
+    header .menuIcon:hover .menuDesplegable {
+        display: block;
+    }
+
+    header .menuIcon .menuDesplegable ul.menu li a:visited {
+        color: white;
+    } 
+
+    header .menuIcon .menuDesplegable ul.menu li a:hover {
+        color: #fce406;
+    } 
+
+    main section .presentacion {
+        display: grid;
+        grid-template-columns: 0.5fr 0.6fr 0.5fr;
+        grid-template-rows: 0.2fr 0.6fr 0.6fr 0.2fr;
+    }
+
+    main section .presentacion .imgPresentacion img {
+        border-radius: 50%;
+        width: 100%;
+        height: auto;
+        border: 0.2em solid black;
+    }
+
+    main section .presentacion .imgPresentacion {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    main section .presentacion .textoPresentacion {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        text-align: center;
+        padding: 0.7em;
+    }
+
+    main section .presentacion .textoPresentacion h1.tituloPresentacion {
+        font-size: 2em;
+    }
+    main section .presentacion .textoPresentacion p.descripcionPresentacion {
+        text-align: left;
+        margin-top: 1em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+        color: whitesmoke;
+        background-color: black;
+        height: 5em;
+        padding-top: 2em;
+    }
+    footer p {
+        padding: 0.1em;
+        font-size: 1em;
+    }
+}
+
+/* ---- PANTALLAS HASTA 1024PX ---- */
+
+
+
+@media (min-width: 1025px) { /* BP pantallas PC */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 7em;
+    }
+
+    header a img {
+        width: 15em;
+    }
+
+    header .menuIcon img{
+        display: none;
+    }
+
+    header .menuIcon ul.menu{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+        max-width: 800px;
+    }
+
+    header .menuIcon .menuDesplegable ul.menu li {
+        padding: 0.3em 0.3em;
+        background-color: black;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 0 0.25em;
+
+    } 
+
+    header .menuIcon .menuDesplegable ul.menu li a {
+        color: white;
+    }
+    
+    header .menuIcon .menuDesplegable ul.menu li a:visited {
+        color: white;
+    }
+    
+    header .menuIcon .menuDesplegable ul.menu li a:hover {
+        color: #fce406;
+    }
+    main section .presentacion {
+        display: flex;
+        width: 50%;
+        margin: auto auto;
+    }
+
+    main section .presentacion img {
+        border: 5px solid black;
+        border-radius: 50%;
+    }
+    .presentacion .textoPresentacion {
+        margin-left: 35px;
+    }
+
+    .presentacion .textoPresentacion h1 {
+        margin-top: 17%;
+        font-size: 200%;
+    }
+
+    .presentacion .textoPresentacion p {
+        margin-top: 10%;
+        font-size: 110%;
+    }
+
+    footer {
+        margin-top:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+        color: whitesmoke;
+        background-color: black;
+        height: 5em;
+        padding-top: 2em;
+    }
+
+}
+
+/* --------------------FIN CSS DEL INDEX------------------- */
+
+
+/* ----------------CREADOR DE CONTENIDO CSS---------------- */
+
+
+.creatorMain {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    margin-top: 1em;
+}
+
+.creatorMain .creatorText {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+}
+
+.creatorMain .creatorText h2 {
+    font-size: 6em;
+    margin-bottom: 0.25em;
+}
+.creatorMain .creatorText p {
+    font-size: 2em;
+    margin-bottom: 0.25em;
+}
+.creatorMain .creatorVideo {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-top: 1em;
+    height: 0; 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    overflow: hidden;
+}
+
+.creatorVideo iframe {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	}
+/* ----------------FIN CREADOR DE CONTENIDO CSS---------------- */
+
+
+/* --------------------- VOICEOVER ---------------------- */
+.mainVO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.mainVO .descripcionVO {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    
+}
+
+.mainVO .descripcionVO h1 {
+    font-size: 200%;
+    background-color: #fce406;
+    border-radius: 10%;
+    padding: 2%;
+    font-weight: bold;    
+}
+
+.mainVO .descripcionVO p {
+    margin-top: 3%;
+    padding: 0 5%;
+    font-size: 1em;
+}
+
+.mainVO .catalogoAudio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin-top: 3%; 
+}
+
+.mainVO .catalogoAudio .audio {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 328px;
+
+}
+
+.mainVO .catalogoAudio .audio h3 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+
+/* FIN CSS VOICEOVER */
+
+.mainContacto  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.mainContacto h1 {
+    font-size: 200%;
+    margin-bottom: 1%;
+}
+
+.form .formItems {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.form .formItems label {
+    padding: 1% 0;
+}
+
+/* FIN CSS DE CONTACTO */
+
