@@ -51,14 +51,17 @@ a:visited {
 }
 
 /* ------------fin del reset------------ */
+/* ------------fin del reset------------ */
+/* ------------fin del reset------------ */
 
 body {
     background-color: whitesmoke; 
     font-family: 'Oswald', sans-serif;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     body {
         display: flex;
         flex-direction: column;
@@ -67,8 +70,9 @@ body {
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: right;
         padding: 0.5em;
+        z-index: 1;
     }
 
     header a img {
@@ -116,22 +120,54 @@ body {
         color: #fce406;
     } 
 
-    main section .presentacion {
-        display: grid;
-        grid-template-columns: 0.5fr 0.6fr 0.5fr;
-        grid-template-rows: 0.2fr 0.6fr 0.6fr 0.2fr;
+    section {
+        display: flex;
+        flex-direction: column;
     }
 
-    main section .presentacion .imgPresentacion img {
-        border-radius: 50%;
+    section .indexTitle {
+        color: black;
+        min-height: 50vh;
+        margin-left: 10%;
+        padding-top: 10%;
+    }
+
+    section .indexTitle p.thisIs {
+        color: black;
+        font-size: 500%;
+        animation-name: slideLeft;
+        animation-duration: 2s;
+    }
+
+    section .indexTitle p.terrepolis {
+        width: 0%;
+        background-color: black;
+        font-size: 500%;
+        color: rgba(255, 215, 0, 0);
+        animation-name: showBlock;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    section .presentacion {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        height: auto;
-        border: 0.2em solid black;
+        background-color: gold;
     }
 
-    main section .presentacion .imgPresentacion {
-        grid-column: 2/3;
-        grid-row: 2/3;
+    section .presentacion .imgPresentacion {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+    }
+
+    section .presentacion img {
+        border: 5px solid black;
+        border-radius: 50%;
+
     }
 
     @keyframes arito {
@@ -140,7 +176,7 @@ body {
         1000%{border-color: rgba(0, 0, 0, 1); transform:scale(1,1);}
     }
 
-    main section .presentacion .imgPresentacion img:hover {
+    section .presentacion .imgPresentacion img:hover {
         border: 0.2em solid black;
         border-radius: 50%;
         animation-name: arito;
@@ -149,45 +185,95 @@ body {
         animation-duration: 1s;
         animation-delay: 0s;
     }
-
-    main section .presentacion .textoPresentacion {
-        grid-column: 1/4;
-        grid-row: 3/4;
-        text-align: center;
-        padding: 0.7em;
+    .presentacion .textoPresentacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
-    main section .presentacion .textoPresentacion h1.tituloPresentacion {
-        font-size: 2em;
+    .presentacion .textoPresentacion h1.tituloPresentacion {
+        font-size: 200%;
+        font-weight: bold;   
     }
-    main section .presentacion .textoPresentacion p.descripcionPresentacion {
-        text-align: left;
-        margin-top: 1em;
+
+    .presentacion .textoPresentacion p.descripcionPresentacion {
+        font-size: 100%;
+        padding-top: 2%;
+    }
+
+    .categorias {
+        height: 10rem;
     }
 
     footer {
+        margin-top: auto;
+    }
+
+    /* ------ INDEX PEQUEÑO ----- */
+    /* ------ INDEX PEQUEÑO ----- */
+    /* ------ INDEX PEQUEÑO ----- */
+
+    .creatorMain {
         display: flex;
         flex-direction: column;
-        margin-top: auto;
-        align-items: center;
-        text-align: center;
-        font-size: 10px;
-        color: whitesmoke;
+        justify-content: center;
+        margin-top: 1em;
+    }
+    
+    .creatorMain .creatorText {
+        display: flex;
+        flex-direction: column;
+        min-height: 80%;
+        margin-bottom: 12%;
+        padding-left: 5%;
+    }
+    
+    .creatorMain .creatorText p.text1 {
+        color: black;
+        font-size: 200%;
+        margin-top: 5%;
+    }
+    .creatorMain .creatorText p.text2 {
+        color: gold;
         background-color: black;
-        height: 5em;
-        padding-top: 2em;
+        font-size: 200%;
     }
-    footer p {
-        padding: 0.1em;
-        font-size: 1em;
+    
+    .creatorMain .creatorText p.text3 {
+        color: black;
+        font-size: 100%;
+        width: 90%;
+        margin-top: 2%;
     }
+    .creatorMain .creatorVideo { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        padding-top: 30px; 
+        overflow: hidden;
+        background-color: goxld;
+        margin-bottom: 5%;
+    }
+    
+    .creatorVideo iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        }
+
+    /* ------CONTENT CREATOR PEQUEÑO ------ */
+    /* ------CONTENT CREATOR PEQUEÑO ------ */
+    /* ------CONTENT CREATOR PEQUEÑO ------ */
 }
 
-/* ---- PANTALLAS HASTA 1024PX ---- */
+/* ---------- PANTALLAS PEQUEÑAS -------- */
+/* ---------- PANTALLAS PEQUEÑAS -------- */
+/* ---------- PANTALLAS PEQUEÑAS -------- */
 
-
-
-@media (min-width: 1025px) { /* BP pantallas PC */
+@media (min-width: 1024px) {
     body {
         display: flex;
         flex-direction: column;
@@ -197,33 +283,34 @@ body {
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        height: 7em;
-    }
-
-    header a img {
-        width: 15em;
+        justify-content: right;
+        align-items: center;
+        height: 3rem;
+        background-color: black;
     }
 
     header .menuIcon img{
         display: none;
     }
 
-    header .menuIcon ul.menu{
+    header .menuIcon .menuDesplegable ul.menu{
         display: flex;
         flex-direction: row;
-        margin-top: 1em;
         max-width: 800px;
     }
 
     header .menuIcon .menuDesplegable ul.menu li {
-        padding: 0.3em 0.3em;
-        background-color: black;
-        border-radius: 5px;
+        padding: 0 0.5rem;   
         font-size: 20px;
-        margin: 0 0.25em;
-
+        border-right: solid 1px white;
     } 
+    
+    header .menuIcon .menuDesplegable ul.menu li.contacto {
+        padding: 0 0.5rem;   
+        font-size: 20px;
+        border-right: none;
+    } 
+
 
     header .menuIcon .menuDesplegable ul.menu li a {
         color: white;
@@ -236,23 +323,58 @@ body {
     header .menuIcon .menuDesplegable ul.menu li a:hover {
         color: #fce406;
     }
-    main section .presentacion {
-        display: flex;
-        width: 50%;
-        margin: auto auto;
+
+    section .indexTitle {
+        color: black;
+        min-height: 100vh;
+        margin-left: 10%;
+        padding-top: 10%;
+    }
+    section .indexTitle p.thisIs {
+        color: black;
+        font-size: 10rem;
+        animation-name: slideLeft;
+        animation-duration: 2s;
     }
 
-    main section .presentacion img {
+    section .indexTitle p.terrepolis {
+        width: 0%;
+        background-color: black;
+        font-size: 10rem;
+        color: rgba(255, 215, 0, 0);
+        animation-name: showBlock;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    section .presentacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: gold;
+    }
+
+    section .presentacion .imgPresentacion {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+    }
+
+    section .presentacion img {
         border: 5px solid black;
         border-radius: 50%;
+
     }
+
     @keyframes arito {
         0%{border-color: rgba(0, 0, 0, 1); transform:scale(1,1);}
         50%{border-color: rgba(0, 0, 0, 0.5); transform:scale(1.2,1.2);}
         1000%{border-color: rgba(0, 0, 0, 1); transform:scale(1,1);}
     }
 
-    main section .presentacion .imgPresentacion img:hover {
+    section .presentacion .imgPresentacion img:hover {
         border: 0.2em solid black;
         border-radius: 50%;
         animation-name: arito;
@@ -263,139 +385,221 @@ body {
     }
     .presentacion .textoPresentacion {
         margin-left: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 3%;
     }
 
-    .presentacion .textoPresentacion h1 {
-        margin-top: 17%;
-        font-size: 200%;
+    .presentacion .textoPresentacion h1.tituloPresentacion {
+        font-size: 4rem;
+        font-weight: bold;   
     }
 
-    .presentacion .textoPresentacion p {
-        margin-top: 10%;
-        font-size: 110%;
+    .presentacion .textoPresentacion p.descripcionPresentacion {
+        font-size: 1.5rem;
+        width: 40rem;
+        padding-top: 2%;
+    }
+
+    .categorias {
+        height: 10rem;
     }
 
     footer {
         margin-top: auto;
-        /* display: flex;
+    }
+    /* ------ INDEX ------ */
+    /* ------ INDEX ------ */
+    /* ------ INDEX ------ */
+
+    .creatorMain {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        margin-top: 1em;
+    }
+    
+    .creatorMain .creatorText {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center; */
-        /* font-size: 10px; */
-        /* color: whitesmoke; */
-        /* background-color: black;
-        height: 5em;
-        padding-top: 0.5rem; */
-        
+        height: 60vh;
+    }
+    
+    .text1 {
+        color: black;
+        font-size: 4rem;
+        margin-top: 5%;
     }
 
-}
-
-/* --------------------FIN CSS DEL INDEX------------------- */
-
-
-/* ----------------CREADOR DE CONTENIDO CSS---------------- */
-
-
-.creatorMain {
-    display: grid;
-    grid-template-columns: 0.1fr 1fr 0.1fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    margin-top: 1em;
-}
-
-.creatorMain .creatorText {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    flex-direction: column;
-}
-
-.creatorMain .creatorText h2 {
-    font-size: 6em;
-    margin-bottom: 0.25em;
-}
-.creatorMain .creatorText p {
-    font-size: 2em;
-    margin-bottom: 0.25em;
-}
-.creatorMain .creatorVideo {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    margin-top: 1em;
-    height: 0; 
-    position: relative; 
-    padding-bottom: 56.25%; 
-    padding-top: 30px; 
-    overflow: hidden;
-}
-
-.creatorVideo iframe {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
-	}
-/* ----------------FIN CREADOR DE CONTENIDO CSS---------------- */
-
-
-/* --------------------- VOICEOVER ---------------------- */
-.mainVO {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2%;
-}
-
-.mainVO .descripcionVO {
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 900px;
+    .text2 {
+        color: gold;
+        background-color: black;
+        font-size: 6rem;
+    }
     
+    .text3 {
+        color: black;
+        font-size: 1.5rem;
+        width: 90%;
+        margin-top: 2%;
+    }
+
+    .creatorMain .creatorVideo {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        margin-top: 1em;
+        height: 0; 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        padding-top: 30px; 
+        margin-bottom: 5%;
+        overflow: hidden;
+    }
+    
+    .creatorVideo iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        }
+    
+    .relleno {
+        grid-row: 2/3;
+        grid-column: 1/4;
+        z-index: -1;
+        background-color: gold;
+    }
+
+    /* ------ CONTENT CREATOR ------- */
+    /* ------ CONTENT CREATOR ------- */
+    /* ------ CONTENT CREATOR ------- */
+
+    .mainVO {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+    
+    .mainVO .descripcionVO {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 10%;
+    }
+    
+    .mainVO .catalogoAudio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        margin-top: 3%; 
+    }
+    
+    .mainVO .catalogoAudio .audio {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        width: 328px;
+    
+    }
+    
+    .mainVO .catalogoAudio .audio h3 {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 1%;
+    }
+    
+
 }
 
-.mainVO .descripcionVO h1 {
-    font-size: 200%;
-    background-color: #fce406;
-    border-radius: 10%;
-    padding: 2%;
-    font-weight: bold;    
-}
+/* ------ PANTALLAS GRANDES ----- */
+/* ------ PANTALLAS GRANDES ----- */
+/* ------ PANTALLAS GRANDES ----- */
 
-.mainVO .descripcionVO p {
-    margin-top: 3%;
-    padding: 0 5%;
-    font-size: 1em;
-}
-
-.mainVO .catalogoAudio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 800px;
-    margin-top: 3%; 
-}
-
-.mainVO .catalogoAudio .audio {
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    width: 328px;
-
-}
-
-.mainVO .catalogoAudio .audio h3 {
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 1%;
-}
 
 /* FIN CSS VOICEOVER */
-
-
 /* FIN CSS DE CONTACTO */
+
+@keyframes slideLeft {
+    0% {transform: translate(-20%,0);
+          color: rgba(0, 0, 0, 0);  
+     }
+    100% {transform: translate(0,0);
+        color: rgba(0, 0, 0, 1)
+    }
+}
+
+@keyframes showBlock {
+    0% {width: 0%;
+        color: rgba(255, 215, 0, 0);
+    }
+    50% {
+        color: rgba(255, 215, 0, 0);
+    }
+    100% {
+        width: 100%;
+        color: rgba(255, 215, 0, 1);
+    }
+}
+
+/* ------ PANTALLAS GRANDES ----- */
+/* ------ PANTALLAS GRANDES ----- */
+/* ------ PANTALLAS GRANDES ----- */
+
+@keyframes aparecer {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+
+.aparecer3s {
+    opacity: 0%;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.aparecer13s {
+    opacity: 0%;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+}
+.aparecer1s {
+    opacity: 0%;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.aparecer06s {
+    opacity: 0%;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+.aparecer03s {
+    opacity: 0%;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.aparecer0s {
+    opacity: 0%;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 
