@@ -1,0 +1,12 @@
+.title_container {
+    margin-left: 5%;
+    margin-bottom: auto;
+    .title_text {
+        margin-top: 2%;
+        p {
+            font-size: 110%;
+            font-family: 'Open Sans', sans-serif;
+            font-family: $fontParrafo;
+        }
+    }
+}

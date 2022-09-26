@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    height: 3rem;
+    background-color: black;
+    font-family: "Source Sans Pro", sans-serif;
+
+    .menuIcon {
+        img {
+            display: none;
+        }
+        .menuDesplegable ul.menu{
+            display: flex;
+            flex-direction: row;
+            max-width: 800px;
+
+            li {
+                padding: 0 0.5rem;   
+                font-size: 20px;
+                border-right: solid 1px white;
+                &.contacto {
+                    padding: 0 0.5rem;   
+                    font-size: 20px;
+                    border-right: none;
+                }
+                a {
+                    color: white;
+                    &:visited {
+                        color: white;
+                    }
+                    &:hover {
+                        color: #fce406; 
+                    } 
+                }
+
+            }
+        }
+
+    }
+
+
+}
+
+/* header .menuIcon img{
+    display: none;
+}
+
+header .menuIcon .menuDesplegable ul.menu{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+}
+
+header .menuIcon .menuDesplegable ul.menu li {
+    padding: 0 0.5rem;   
+    font-size: 20px;
+    border-right: solid 1px white;
+} 
+
+header .menuIcon .menuDesplegable ul.menu li.contacto {
+    padding: 0 0.5rem;   
+    font-size: 20px;
+    border-right: none;
+}  
+
+
+header .menuIcon .menuDesplegable ul.menu li a {
+    color: white;
+}
+
+header .menuIcon .menuDesplegable ul.menu li a:visited {
+    color: white;
+}
+
+header .menuIcon .menuDesplegable ul.menu li a:hover {
+    color: #fce406;
+}*/
