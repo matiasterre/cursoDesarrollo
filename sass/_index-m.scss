@@ -1,0 +1,85 @@
+section { 
+    .indexTitle {
+        color: black;
+        min-height: 20vh;
+        margin-left: 10%;
+        padding-top: 10%;
+    
+        p.thisIs {
+            color: black;
+            font-size: 10vw;
+            animation-name: slideLeft;
+            animation-duration: 2s;
+        }
+
+        p.terrepolis {
+            width: 0%;
+            background-color: black;
+            font-size: 14vw;
+            color: rgba(255, 215, 0, 0);
+            animation-name: showBlock;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 10%;
+        background-color: gold;
+
+        .imgPresentacion {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            padding-top: 2%;
+
+            img {
+                width: 50%;
+                border: 5px solid black;
+                border-radius: 50%;
+                &:hover {
+                    border: 0.2em solid black;
+                    border-radius: 50%;
+                    animation-name: arito;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in;
+                    animation-duration: 1s;
+                    animation-delay: 0s;
+                }
+            }
+        }
+
+        .textoPresentacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            padding-top: 2%;
+            padding-bottom: 3%;
+            font-family: "Source Sans Pro", sans-serif;
+            
+            h1.tituloPresentacion {
+                font-size: 2em;
+                font-weight: bold;   
+            }
+            p.descripcionPresentacion {
+                font-size: 1em;
+                width: 80%;
+                padding: 2% 2% 0% 2%;
+            }
+        }
+
+    }
+    margin-bottom: 15%;
+}
+
+footer {
+    margin-top: auto;
+    background-color: black;
+    font-family: $fontParrafo;
+}       
+

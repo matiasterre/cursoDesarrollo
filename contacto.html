@@ -4,6 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terrépolis</title>
+    <meta name="description" content="Terrepolis es el sitio personal de Matias Terré en el que podés ver todos sus trabajos como comunicador, realizador, voiceover y divulgador cripto.">
+    <meta name="keywords" content="Matias Terré, Matias Terre, Terre, Terrepolis, Voiceover, Locutor, Comunicador, conductor de tv, conductor de radio, curso de criptomonedas, criptomonedas, invertir en criptomonedas, edicion de video">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -13,70 +15,72 @@
 </head>
 <body>
     <header>
-        <div class="menuIcon">
-            <img src="./assets/menu_icon.png">
-            <div class="menuDesplegable">
-                <ul class="menu">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./contentCreator.html">Creador de contenido</a></li>
-                    <li><a href="./voiceover.html">Voiceover</a></li>
-                    <li><a href="./crypto.html">Crypto</a></li>
-                    <li><a href="./webDeveloper.html">Web Developer</a></li>
-                    <li class="contacto"><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+        <div class="d-flex justify-content-end">
+            <nav class="navbar navbar-dark navbar-expand-md">
+                <div class="container-fluid justify-content-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                        <a class="nav-link text-white" href="./index.html">Inicio</a>
+                        <a class="nav-link text-white" href="./contentCreator.html">Creador de Contenido</a>
+                        <a class="nav-link text-white" href="./voiceover.html">Voiceover</a>
+                        <a class="nav-link text-white" href="./crypto.html">Cripto</a>
+                        <a class="nav-link text-white active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
-        <div class="col-4 ms-5 mb-4">
-            <div class="text1">¿Consultas?</div>
-        </div>
-        <div class="d-none d-lg-block">
-            <div class="col-4 ms-5 mb-4 text3">
-                <p>Si querés contactarme estaré encantado de responder a tu consulta. Usá el formulario para ponernos en contacto!</p>
+        <section class="contacto-main">
+            <div class="col-4 ms-5 mb-4">
+                <div class="text1"><h1>¿Consultas?</h1></div>
             </div>
-            <div class="col-2 form-floating ms-5">
-                <input type="Nombre" class="form-control" id="floatingInput" placeholder="Nombre">
-                <label for="floatingInput">Nombre</label>
-            </div>
-            <div class="col-2 form-floating ms-5 mt-2">
-                <input type="email" class="form-control" id="floatingInput" placeholder="nombre@eejemplo.com">
-                <label for="floatingInput">Email</label>
-            </div>
-            <div class="col-4 form-floating ms-5 mt-2">
-                <textarea class="form-control" placeholder="Escribí tu consulta acá" id="floatingTextarea2" style="height: 200px"></textarea>
-                <label for="floatingTextarea2">Consulta</label>
-            </div>
-        </div>
-        <div class="d-inline d-lg-none">
-            <div class="col-8 ms-5 mb-4">
-                <p>Si querés contactarme estaré encantado de responder a tu consulta. Usá el formulario para ponernos en contacto!</p>
-            </div>
-            <div class="col-8 form-floating ms-5">
-                <input type="Nombre" class="form-control" id="floatingInput" placeholder="Nombre">
-                <label for="floatingInput">Nombre</label>
-            </div>
-            <div class="col-8 form-floating ms-5 mt-2">
-                <input type="email" class="form-control" id="floatingInput" placeholder="nombre@eejemplo.com">
-                <label for="floatingInput">Email</label>
-            </div>
-            <div class="col-10 form-floating ms-5 mt-2">
-                <textarea class="form-control" placeholder="Escribí tu consulta acá" id="floatingTextarea2" style="height: 200px"></textarea>
-                <label for="floatingTextarea2">Consulta</label>
-            </div>
-        </div>
-        
-        <button type="button" class="btn btn-warning mt-2 ms-5">Enviar</button>
+            <div class="d-none d-md-block">
+                <div class="col-8 ms-5 mb-4">
+                    <p class="text5">Si querés contactarme estaré encantado de responder a tu consulta. Usá el formulario para ponernos en contacto!</p>
+                </div>
+                <div class="col-2 form-floating ms-5 text6">
+                    <input type="Nombre" class="form-control" id="floatingInput" placeholder="Nombre">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="col-2 form-floating ms-5 mt-2 text6">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="nombre@eejemplo.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="col-4 form-floating ms-5 mt-2 text6">
+                    <textarea class="form-control" placeholder="Escribí tu consulta acá" id="floatingTextarea2" style="height: 200px"></textarea>
+                    <label for="floatingTextarea2">Consulta</label>
+                </div>
+            </div>    
+            <div class="d-block d-md-none">
+                <div class="col-10 ms-5 mb-4">
+                    <p class="text5">Si querés contactarme estaré encantado de responder a tu consulta. Usá el formulario para ponernos en contacto!</p>
+                </div>
+                <div class="col-8 form-floating ms-5 text6">
+                    <input type="Nombre" class="form-control" id="floatingInput" placeholder="Nombre">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="col-8 form-floating ms-5 mt-2 text6">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="nombre@eejemplo.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="col-10 form-floating ms-5 mt-2 text6">
+                    <textarea class="form-control" placeholder="Escribí tu consulta acá" id="floatingTextarea2" style="height: 200px"></textarea>
+                    <label for="floatingTextarea2">Consulta</label>
+                </div>
+            </div>    
+            <button type="button" class="btn-enviar btn mt-2 ms-5 text6">Enviar
+            </button>
+        </section>
     </main>
-    <footer class="footerSticky">
-        <div class="container-fluid bg-dark text-white pt-4 pb-4">
+    <footer>
+        <div class="sticky-bottom container-fluid text-white pt-4 pb-4 ">
             <p class="fs-6 text-center">Matias Terré, todos los derechos reservados</p>
         </div>
-        <!-- <div class="footItems">
-            <p>Matias Terré todos los derechos reservados</p>
-            <p>mterre@gmail.com</p>
-            <p>@terrepolis</p>
-        </div>     -->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>      
 </body>

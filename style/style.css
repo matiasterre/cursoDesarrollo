@@ -527,9 +527,6 @@ body {
 /* ------ PANTALLAS GRANDES ----- */
 
 
-/* FIN CSS VOICEOVER */
-/* FIN CSS DE CONTACTO */
-
 @keyframes slideLeft {
     0% {transform: translate(-20%,0);
           color: rgba(0, 0, 0, 0);  

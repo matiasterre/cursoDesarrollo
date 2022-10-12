@@ -81,91 +81,36 @@ a:visited {
   font-family: "Oswald", sans-serif;
 }
 
+.text5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1em;
+  color: black;
+  margin-top: 2%;
+  width: 50%;
+}
+
+.text6 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.titulo-destacado {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+}
+
 /*===== FIN DE ESTILOS ======*/
 body {
   background-color: whitesmoke;
   font-family: "Oswald", sans-serif;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 /*===== FIN DEL BODY =====*/
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: center;
-  height: 3rem;
   background-color: black;
   font-family: "Source Sans Pro", sans-serif;
-}
-header .menuIcon img {
-  display: none;
-}
-header .menuIcon .menuDesplegable ul.menu {
-  display: flex;
-  flex-direction: row;
-  max-width: 800px;
-}
-header .menuIcon .menuDesplegable ul.menu li {
-  padding: 0 0.5rem;
-  font-size: 20px;
-  border-right: solid 1px white;
-}
-header .menuIcon .menuDesplegable ul.menu li.contacto {
-  padding: 0 0.5rem;
-  font-size: 20px;
-  border-right: none;
-}
-header .menuIcon .menuDesplegable ul.menu li a {
-  color: white;
-}
-header .menuIcon .menuDesplegable ul.menu li a:visited {
-  color: white;
-}
-header .menuIcon .menuDesplegable ul.menu li a:hover {
-  color: #fce406;
-}
-
-/* header .menuIcon img{
-    display: none;
-}
-
-header .menuIcon .menuDesplegable ul.menu{
-    display: flex;
-    flex-direction: row;
-    max-width: 800px;
-}
-
-header .menuIcon .menuDesplegable ul.menu li {
-    padding: 0 0.5rem;   
-    font-size: 20px;
-    border-right: solid 1px white;
-} 
-
-header .menuIcon .menuDesplegable ul.menu li.contacto {
-    padding: 0 0.5rem;   
-    font-size: 20px;
-    border-right: none;
-}  
-
-
-header .menuIcon .menuDesplegable ul.menu li a {
-    color: white;
-}
-
-header .menuIcon .menuDesplegable ul.menu li a:visited {
-    color: white;
-}
-
-header .menuIcon .menuDesplegable ul.menu li a:hover {
-    color: #fce406;
-}*/
-.footerSticky {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 @-webkit-keyframes aparecer {
@@ -255,15 +200,621 @@ header .menuIcon .menuDesplegable ul.menu li a:hover {
           animation-fill-mode: forwards;
 }
 
-.title_container {
-  margin-left: 5%;
-  margin-bottom: auto;
+@-webkit-keyframes slideLeft {
+  0% {
+    transform: translate(-20%, 0);
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+    color: rgb(0, 0, 0);
+  }
 }
-.title_container .title_text {
-  margin-top: 2%;
+
+@keyframes slideLeft {
+  0% {
+    transform: translate(-20%, 0);
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+    color: rgb(0, 0, 0);
+  }
 }
-.title_container .title_text p {
-  font-size: 110%;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
+@-webkit-keyframes showBlock {
+  0% {
+    width: 0%;
+    color: rgba(255, 215, 0, 0);
+  }
+  50% {
+    color: rgba(255, 215, 0, 0);
+  }
+  100% {
+    width: 100%;
+    color: rgb(255, 215, 0);
+  }
+}
+@keyframes showBlock {
+  0% {
+    width: 0%;
+    color: rgba(255, 215, 0, 0);
+  }
+  50% {
+    color: rgba(255, 215, 0, 0);
+  }
+  100% {
+    width: 100%;
+    color: rgb(255, 215, 0);
+  }
+}
+@-webkit-keyframes arito {
+  0% {
+    border-color: rgb(0, 0, 0);
+    transform: scale(1, 1);
+  }
+  50% {
+    border-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.2, 1.2);
+  }
+  1000% {
+    border-color: rgb(0, 0, 0);
+    transform: scale(1, 1);
+  }
+}
+@keyframes arito {
+  0% {
+    border-color: rgb(0, 0, 0);
+    transform: scale(1, 1);
+  }
+  50% {
+    border-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.2, 1.2);
+  }
+  1000% {
+    border-color: rgb(0, 0, 0);
+    transform: scale(1, 1);
+  }
+}
+@media (max-width: 767px) {
+  .text1 {
+    color: black;
+    font-size: 10vw;
+    margin-top: 5%;
+  }
+  .text2 {
+    color: gold;
+    background-color: black;
+    font-size: 12vw;
+  }
+  .text3 {
+    color: black;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5em;
+    width: 90%;
+    margin-top: 2%;
+  }
+  .text4 {
+    font-family: "Oswald", sans-serif;
+  }
+  .text5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1em;
+    color: black;
+    margin-top: 2%;
+    width: 90%;
+  }
+  .titulo-destacado {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2em;
+  }
+  section {
+    margin-bottom: 15%;
+  }
+  section .indexTitle {
+    color: black;
+    min-height: 20vh;
+    margin-left: 10%;
+    padding-top: 10%;
+  }
+  section .indexTitle p.thisIs {
+    color: black;
+    font-size: 10vw;
+    -webkit-animation-name: slideLeft;
+            animation-name: slideLeft;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  section .indexTitle p.terrepolis {
+    width: 0%;
+    background-color: black;
+    font-size: 14vw;
+    color: rgba(255, 215, 0, 0);
+    -webkit-animation-name: showBlock;
+            animation-name: showBlock;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  section .presentacion {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 10%;
+    background-color: gold;
+  }
+  section .presentacion .imgPresentacion {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+  }
+  section .presentacion .imgPresentacion img {
+    width: 50%;
+    border: 5px solid black;
+    border-radius: 50%;
+  }
+  section .presentacion .imgPresentacion img:hover {
+    border: 0.2em solid black;
+    border-radius: 50%;
+    -webkit-animation-name: arito;
+            animation-name: arito;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  section .presentacion .textoPresentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  section .presentacion .textoPresentacion h1.tituloPresentacion {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  section .presentacion .textoPresentacion p.descripcionPresentacion {
+    font-size: 1em;
+    width: 80%;
+    padding: 2% 2% 0% 2%;
+  }
+  footer {
+    margin-top: auto;
+    background-color: black;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .creatorMain {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.2fr 0.3fr 0.5fr;
+    margin-top: 1em;
+    margin-bottom: 14%;
+  }
+  .creatorMain .creatorText {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+  }
+  .creatorMain .texto-parrafo {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+  }
+  .creatorMain .relleno {
+    grid-column: 1/4;
+    grid-row: 3/3;
+    background-color: gold;
+  }
+  .creatorMain .creatorVideo {
+    grid-row: 3/3;
+    grid-column: 2/3;
+    margin-top: 1em;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    margin-bottom: 5%;
+    overflow: hidden;
+  }
+  .creatorMain .creatorVideo iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .title_container {
+    margin-left: 10%;
+    margin-bottom: auto;
+  }
+  .title_container p {
+    font-size: 110%;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 2%;
+  }
+  .cripto-curso {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 15%;
+    background-color: gold;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+  .cripto-curso .img-flyer {
+    width: 100%;
+  }
+  .cripto-curso .boton-curso {
+    background-color: black;
+    color: white;
+    padding: 1.5%;
+    border-radius: 2em;
+    width: 95vw;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 5vw;
+  }
+  .cripto-curso .boton-curso:hover {
+    background-color: white;
+    color: black;
+  }
+  .cripto-curso .texto-curso {
+    margin-top: 5%;
+    width: 80%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 110%;
+    padding-bottom: 5%;
+  }
+  .cripto-curso .texto-curso p {
+    margin-top: 4%;
+  }
+  .cripto-curso-b {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  .cripto-curso-b .texto-curso {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 80%;
+  }
+  .cripto-curso-b .texto-curso p {
+    margin-top: 4%;
+  }
+  .cripto-curso-b .boton-curso-fin {
+    background-color: black;
+    color: white;
+    padding: 1.5%;
+    border-radius: 2em;
+    width: 95vw;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 5vw;
+  }
+  .cripto-curso-b .boton-curso-fin:hover {
+    background-color: gold;
+    color: black;
+  }
+  .mainVO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+  }
+  .mainVO .descripcionVO {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 20%;
+    width: 100vw;
+  }
+  .mainVO p {
+    margin-top: 2%;
+  }
+  .catalogoAudio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+    padding-left: 15%;
+    padding-top: 5%;
+    background-color: gold;
+  }
+  .catalogoAudio .audio-muestra {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 80%;
+  }
+  .catalogoAudio .audio-muestra h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 1%;
+  }
+  .catalogoAudio .audio-muestra audio {
+    width: 100%;
+  }
+  .contacto-main {
+    margin-bottom: 5%;
+  }
+  .btn-enviar {
+    background-color: gold;
+  }
+}
+@media (min-width: 768px) {
+  section .indexTitle {
+    color: black;
+    min-height: 92vh;
+    margin-left: 10%;
+    padding-top: 10%;
+  }
+  section .indexTitle p.thisIs {
+    color: black;
+    font-size: 9rem;
+    -webkit-animation-name: slideLeft;
+            animation-name: slideLeft;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  section .indexTitle p.terrepolis {
+    width: 0%;
+    background-color: black;
+    font-size: 9rem;
+    color: rgba(255, 215, 0, 0);
+    -webkit-animation-name: showBlock;
+            animation-name: showBlock;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  section .presentacion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: gold;
+  }
+  section .presentacion .imgPresentacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+  }
+  section .presentacion .imgPresentacion img {
+    width: 25%;
+    border: 5px solid black;
+    border-radius: 50%;
+  }
+  section .presentacion .imgPresentacion img:hover {
+    border: 0.2em solid black;
+    border-radius: 50%;
+    -webkit-animation-name: arito;
+            animation-name: arito;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  section .presentacion .textoPresentacion {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  section .presentacion .textoPresentacion h1.tituloPresentacion {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  section .presentacion .textoPresentacion p.descripcionPresentacion {
+    font-size: 1.5rem;
+    width: 40rem;
+    padding-top: 2%;
+  }
+  footer {
+    background-color: black;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .creatorMain {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    margin-top: 1em;
+  }
+  .creatorMain .creatorText {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+  }
+  .creatorMain .texto-parrafo {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+  }
+  .creatorMain .relleno {
+    grid-column: 1/4;
+    grid-row: 3/3;
+    background-color: gold;
+  }
+  .creatorMain .creatorVideo {
+    grid-row: 3/3;
+    grid-column: 2/3;
+    margin-top: 1em;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    margin-bottom: 5%;
+    overflow: hidden;
+  }
+  .creatorMain .creatorVideo iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .relleno {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    z-index: -1;
+    background-color: gold;
+  }
+  .title_container {
+    margin-left: 5%;
+    margin-bottom: auto;
+  }
+  .title_container p {
+    font-size: 110%;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 2%;
+  }
+  .cripto-curso {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+    background-color: gold;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+  .cripto-curso .img-flyer {
+    width: 60%;
+  }
+  .cripto-curso .boton-curso {
+    background-color: black;
+    color: white;
+    padding: 1.5%;
+    border-radius: 2em;
+    width: 75vw;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 2.5vw;
+  }
+  .cripto-curso .boton-curso:hover {
+    background-color: white;
+    color: black;
+  }
+  .cripto-curso .texto-curso {
+    margin-top: 5%;
+    width: 50%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 110%;
+    padding-bottom: 5%;
+  }
+  .cripto-curso .texto-curso p {
+    margin-top: 4%;
+  }
+  .cripto-curso-b {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  .cripto-curso-b .texto-curso {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 50%;
+  }
+  .cripto-curso-b .texto-curso p {
+    margin-top: 4%;
+  }
+  .cripto-curso-b .boton-curso-fin {
+    background-color: black;
+    color: white;
+    padding: 1.5%;
+    border-radius: 2em;
+    width: 75vw;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 2.5vw;
+  }
+  .cripto-curso-b .boton-curso-fin:hover {
+    background-color: gold;
+    color: black;
+  }
+  .mainVO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+  }
+  .mainVO .descripcionVO {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 10%;
+    width: 90%;
+  }
+  .mainVO p {
+    margin-top: 2%;
+  }
+  .catalogoAudio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+    padding-left: 15%;
+    background-color: gold;
+  }
+  .catalogoAudio .audio-muestra {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 80%;
+  }
+  .catalogoAudio .audio-muestra h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 1%;
+  }
+  .catalogoAudio .audio-muestra audio {
+    width: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  body .contacto-main {
+    margin-bottom: 5%;
+  }
+  .btn-enviar {
+    background-color: gold;
+  }
 }/*# sourceMappingURL=main.css.map */

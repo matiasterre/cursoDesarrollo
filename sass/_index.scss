@@ -1,0 +1,81 @@
+section { 
+        .indexTitle {
+            color: black;
+            min-height: 92vh;
+            margin-left: 10%;
+            padding-top: 10%;
+        
+            p.thisIs {
+                color: black;
+                font-size: 9rem;
+                animation-name: slideLeft;
+                animation-duration: 2s;
+            }
+
+            p.terrepolis {
+                width: 0%;
+                background-color: black;
+                font-size: 9rem;
+                color: rgba(255, 215, 0, 0);
+                animation-name: showBlock;
+                animation-duration: 2s;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: gold;
+    
+        .imgPresentacion {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 2%;
+
+            img {
+                width: 25%;
+                border: 5px solid black;
+                border-radius: 50%;
+                &:hover {
+                    border: 0.2em solid black;
+                    border-radius: 50%;
+                    animation-name: arito;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in;
+                    animation-duration: 1s;
+                    animation-delay: 0s;
+                }
+            }
+        }
+
+        .textoPresentacion {
+            margin-left: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 2%;
+            padding-bottom: 3%;
+            font-family: "Source Sans Pro", sans-serif;
+            
+            h1.tituloPresentacion {
+                font-size: 4rem;
+                font-weight: bold;   
+            }
+            p.descripcionPresentacion {
+                font-size: 1.5rem;
+                width: 40rem;
+                padding-top: 2%;
+            }
+        }
+
+    }
+}       
+
+footer {
+    background-color: black;
+    font-family: $fontParrafo;
+}

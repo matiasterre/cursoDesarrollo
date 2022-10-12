@@ -2,17 +2,34 @@ $fontParrafo: 'Source Sans Pro', sans-serif;
 $fontTitulo: 'Oswald', sans-serif;
 
 @import "reset";
+// FIN DEL RESET
 @import "estilos";
+// FIN DE ESTILOS
 @import "body";
+//FIN DEL BODY
 @import "header";
-@import "footer";
+//FIN DEL HEADER    
 @import "animaciones";
-@import "cripto";
-@import "contacto";
+//FIN ANIMACIONES
+@media (max-width: 767px) {
+    @import "estilos-m";
+    @import "index-m";
+    @import "contentCreator-m";
+    @import "cripto-m";
+    @import "voiceover-m";
+    @import "contacto-m";
+    
+}
+@media (min-width: 768px) {
 
-
-
-
-
-
- 
+    @import "index";
+    //FIN INDEX
+    @import "contentCreator";
+    //FIN CONTENT CREATOR
+    @import "cripto";
+    //FIN CRIPTO
+    @import "voiceover";
+    //FIN VOICEOVER
+    @import "contacto";
+    //FIN CONTACTO
+}

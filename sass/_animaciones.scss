@@ -46,3 +46,31 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+
+@keyframes slideLeft {
+    0% {transform: translate(-20%,0);
+          color: rgba(0, 0, 0, 0);  
+     }
+    100% {transform: translate(0,0);
+        color: rgba(0, 0, 0, 1)
+    }
+}
+
+@keyframes showBlock {
+    0% {width: 0%;
+        color: rgba(255, 215, 0, 0);
+    }
+    50% {
+        color: rgba(255, 215, 0, 0);
+    }
+    100% {
+        width: 100%;
+        color: rgba(255, 215, 0, 1);
+    }
+}
+
+@keyframes arito {
+    0%{border-color: rgba(0, 0, 0, 1); transform:scale(1,1);}
+    50%{border-color: rgba(0, 0, 0, 0.5); transform:scale(1.2,1.2);}
+    1000%{border-color: rgba(0, 0, 0, 1); transform:scale(1,1);}
+}

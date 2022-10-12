@@ -1,0 +1,49 @@
+.mainVO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+
+    .descripcionVO {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 20%;
+        width: 100vw;
+    }
+
+    p {
+        margin-top: 2%;
+    }
+}
+
+.catalogoAudio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+    padding-left: 15%;
+    padding-top: 5%;
+    background-color: gold;
+    
+    .audio-muestra {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        width: 80%;
+
+        h3 {
+            font-family: $fontParrafo;
+            text-align: center;
+            font-weight: bolder;
+            padding-bottom: 1%;
+        }
+
+        audio {
+            width: 100%;
+        }
+    
+    }
+}
